@@ -1,0 +1,46 @@
+.tempo{
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+}
+.quick{
+    width: 75%;
+    margin: auto;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.quick img{
+    width: 60%;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+   }
+.support-1, .support-2, .support-3, .support-4{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.support-1 p{
+  color: #797979;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.support-2 h1, .support-3 h1, .support-4 h1{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.support-2 p, .support-3 p, .support-4 p {
+    color: #7d7c7c;
+    font-family: 'Courier New', Courier, monospace;
+}
+.support-2 p:hover, .support-3 p:hover, .support-4 p:hover{
+    color: #ff003c;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}

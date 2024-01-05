@@ -1,0 +1,125 @@
+#tion4 {
+    width: 100%;
+    margin-top: 50px;
+  
+    .tion4o {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 60px;
+  
+      .popular {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+  
+        h2 {
+          font-size: 70px;
+        }
+  
+        p {
+          width: 65%;
+        }
+      }
+  
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 50px;
+  
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 15px;
+          position: relative;
+  
+          i {
+            font-size: 30px;
+            position: absolute;
+            top: 0px;
+            right: 15px;
+            opacity: 0;
+            color: orangered;
+            transition: 0.6s;
+            z-index: 1;
+          }
+          &:hover i {
+            opacity: 1;
+          }
+  
+          .img {
+            position: relative;
+            overflow: hidden;
+  
+            &::after {
+              content: "Add To Cart";
+              position: absolute;
+              width: 100%;
+              background: orangered;
+              color: white;
+              transition: 0.6s;
+              bottom: -50px;
+              left: 0;
+              right: 0;
+              padding: 10px 0;
+              text-align: center;
+            }
+  
+            &:hover::after {
+              bottom: 0;
+            }
+          }
+        }
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        button {
+          background: orangered;
+          color: white;
+          border: none;
+          font-size: 23px;
+          position: relative;
+          overflow: hidden;
+          padding: 20px 50px;
+  
+          span {
+            position: relative;
+            z-index: 1;
+          }
+  
+          &:before {
+            content: "";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(59, 57, 57);
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            transition: left 0.6s;
+            transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+          }
+  
+          &:hover:before {
+            left: 0;
+          }
+        }
+      }
+    }
+    .foto{
+      width:100%;
+      height:400px;
+    }
+  }
